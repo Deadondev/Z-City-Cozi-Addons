@@ -87,7 +87,8 @@ function CLASS.On(self, data)
 
             self:Give("weapon_hg_crowbar")--GORDON FREEMAN SAVED MY LIFE
             self:Give("weapon_makeshiftbandage_sh") --makeshifts! :)
-            ply:Give("weapon_medkit_sh")
+            self:Give("weapon_medkit_sh")
+            self:Give("weapon_bloodbag")
 
             self:Give("weapon_physcannon")
 

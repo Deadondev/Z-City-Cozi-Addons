@@ -197,6 +197,7 @@ local rebel_subclasses = {
             ply:Give("weapon_hg_pipebomb_tpik")
             ply:Give("weapon_makeshiftbandage_sh")
             ply:Give("weapon_medkit_sh")
+            ply:Give("weapon_bloodbag")
 
             local wep = ply:Give("weapon_revolver357")
             ply:GiveAmmo(wep:GetMaxClip1() * 3, wep:GetPrimaryAmmoType(), true)
