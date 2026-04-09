@@ -105,6 +105,9 @@ function CLASS.On(self, data)
                 end
 
                 self:Give("weapon_hg_crowbar")
+                self:Give("weapon_makeshiftbandage_sh") --makeshifts! :)
+                self:Give("weapon_medkit_sh")
+                self:Give("weapon_bloodbag")
             end
         end
     end
