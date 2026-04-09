@@ -43,15 +43,12 @@ phrases = {
 
 contextPhrases = {
 	[1] = { -- male phrases
-		["Okay!"] = { -- TESTING THIS WAS Scared
+		["Okay!"] = {
 			"vo/npc/male01/ok01.wav",
 			"vo/npc/male01/ok02.wav",
-			"vo/npc/male01/okimready01.wav",
-			"vo/npc/male01/okimready02.wav",
-			"vo/npc/male01/okimready03.wav",
 
 		},
-		["Sorry!"] = { -- TESTING THIS WAS ADDED
+		["Sorry!"] = {
 			"vo/npc/male01/sorry01.wav",
 			"vo/npc/male01/sorry02.wav",
 			"vo/npc/male01/sorry03.wav",
@@ -65,6 +62,8 @@ contextPhrases = {
 		["I'm Hurt!"] = {
 			"vo/npc/male01/imhurt01.wav",
 			"vo/npc/male01/imhurt02.wav",
+			"vo/npc/male01/help01.wav",
+			"vo/coast/bugbait/sandy_help.wav"
 
 		},
 		["Cheer"] = {
@@ -104,7 +103,7 @@ contextPhrases = {
 			"vo/outland_12/reb1_striderdown07.wav",
 			"vo/outland_02/griggs_betweenwave_09.wav"
 		},
-		["Yell for help"] = {
+		["Help!"] = {
 			"vo/npc/male01/runforyourlife01.wav",
 			"vo/npc/male01/runforyourlife02.wav",
 			"vo/npc/male01/runforyourlife03.wav",
