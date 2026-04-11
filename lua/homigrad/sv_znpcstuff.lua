@@ -8,8 +8,9 @@ local math_random, math_Rand = math.random, math.Rand
 			"weapon_medkit_sh",
 			"weapon_bandage_sh",
 			"weapon_handcuffs",
-			"weapon_walkie_talkie"
-			"weapon_smallconsumable" --ar ar ar
+			"weapon_walkie_talkie",
+			"weapon_smallconsumable", -- REMEMBER THE COMMA, ar ar ar this is a balance test.
+			"ent_ammo_9x19mmparabellum"
 		},
 		["npc_combine_s"] = {
 			"weapon_melee",
