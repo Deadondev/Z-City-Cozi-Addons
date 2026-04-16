@@ -16,7 +16,21 @@ local math_random, math_Rand = math.random, math.Rand
 			"weapon_melee",
 			"weapon_hg_hl2nade_tpik",
 			"weapon_bandage_sh",
-			"weapon_handcuffs"
+			"weapon_handcuffs", 
+			"weapon_medkit_sh", --added pulse ammo, medkit, morphine and epi
+			"weapon_morphine", 
+			"weapon_adrenaline",
+			"ent_ammo_4.6x30mm"  --ent_ammo_pulse
+		},
+		["ShotgunSoldier"] = {
+			"weapon_melee",
+			"weapon_hg_hl2nade_tpik",
+			"weapon_bandage_sh",
+			"weapon_handcuffs", 
+			"weapon_medkit_sh",
+			"weapon_morphine", 
+			"weapon_adrenaline",
+			"ent_ammo_12/70gauge"
 		},
 		["npc_citizen"] = {
 			"weapon_smallconsumable",
@@ -28,6 +42,8 @@ local math_random, math_Rand = math.random, math.Rand
 	local funcspawnNPCs = { --// Custom on NPC spawn function goes here
 		["npc_combine_s"] = function(ent)
 			ent.organism.CantCheckPulse = true
+
+			ent.print( GetActiveWeapon() ) -- my bullshit
 
 			--// Armor
 			ent.armors = {}
@@ -116,6 +132,19 @@ local math_random, math_Rand = math.random, math.Rand
 				rag.inventory.Weapons[wep] = weapon and weapon.GetInfo and weapon:GetInfo() or true
 				rag:SetNetVar("Inventory", rag.inventory)
 			end
+
+			--for k, ammo in pairs(loot) do -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+				--local weapon = weapons.Get(wep) unknown if needed
+				if weapons.GetList() == "weapon_osipr" then
+					rag.inventory[ammo] = "ent_ammo_pulse"
+					--rag:SetNetVar("Inventory", rag.inventory)
+					--table.add(rag.inventory,"weapon_osipr")
+				end
+				--if rag.inventory.Weapons and rag.inventory.Weapons[ammo] then return end
+				--rag.inventory.Weapons = rag.inventory.Weapons or {}
+				--rag.inventory.Weapons[wep] = weapon and weapon.GetInfo and weapon:GetInfo() or true
+				--rag:SetNetVar("Inventory", rag.inventory)
+			--end------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 			if nameNPCs[class] then
 				ent:SetNWString("PlayerName", nameNPCs[class][1])
