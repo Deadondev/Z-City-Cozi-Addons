@@ -249,19 +249,19 @@ if CLIENT then
 				count = count + ((ent:IsPlayer() or ent:IsRagdoll()) and ((hg.TraitorLoot[i] and ent:IsPlayer()) and 2 or 0.5) or 1) * (not ent.foundloot[i] and 1 or 0)
 			end
 		end
-		local time = CurTime() + 3 -- This is the "Searching..." Part of the HUD, does nothing. DW about it.
-		function DScrollPanel:Paint(w, h)
-			txt = "Searching"
-			if time > 0 then
-				for i = 1, 3 - math.Round(time-CurTime(),0) do
-					txt = txt .. "."
-				end
-				if time < CurTime() then
-					time = CurTime() + 3
-				end
-			end
-			draw.DrawText((plyMenu.Created + count + 3) < CurTime() and "" or txt, "ZCity_Small", w / 2, h / 2.8, Color(255,255,255,15), TEXT_ALIGN_CENTER)
-		end------------------------------------------------------------------------------------------------------
+		--local time = CurTime() + 3 -- This is the "Searching..." Part of the HUD, does nothing. DW about it.
+		--function DScrollPanel:Paint(w, h)
+		--	txt = "Searching"
+		--	if time > 0 then
+		--		for i = 1, 3 - math.Round(time-CurTime(),0) do
+		--			txt = txt .. "."
+		--		end
+		--		if time < CurTime() then
+		--			time = CurTime() + 3
+		--		end
+		--	end
+		--	draw.DrawText((plyMenu.Created + count + 3) < CurTime() and "" or txt, "ZCity_Small", w / 2, h / 2.8, Color(255,255,255,15), TEXT_ALIGN_CENTER)
+		--end------------------------------------------------------------------------------------------------------
 		local count2 = 0
 		
 		for tab, things in pairs(inv) do
