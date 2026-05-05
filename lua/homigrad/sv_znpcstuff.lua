@@ -9,7 +9,7 @@ local math_random, math_Rand = math.random, math.Rand
 			"weapon_bandage_sh",
 			"weapon_handcuffs",
 			"weapon_walkie_talkie",
-			"weapon_smallconsumable", -- REMEMBER THE COMMA, ar ar ar this is a balance test.
+			"weapon_combineration", -- REMEMBER THE COMMA, ar ar ar this is a balance test.
 			"ent_ammo_9x19mmparabellum" -- Gives about 30 rounds.
 		},
 		["npc_combine_s"] = {
@@ -20,6 +20,7 @@ local math_random, math_Rand = math.random, math.Rand
 			"weapon_medkit_sh", --added pulse ammo, medkit, morphine and epi
 			"weapon_morphine", 
 			"weapon_adrenaline",
+			"weapon_combineration",
 			"ent_ammo_4.6x30mm"  --ent_ammo_pulse
 		},
 		["ShotgunSoldier"] = {
